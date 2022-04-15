@@ -1,0 +1,79 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+.choice-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.choice-grid div {
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  width: 32.5%;
+  border: solid #dcdcdc 1px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.content-img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+.question-name {
+  background-image: url("https://cdn.pixabay.com/photo/2013/07/12/18/17/equalizer-153212__480.png");
+}
+.question-name h1 {
+  background-color: rgba(50, 48, 48, 0.9);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 15px;
+  height: 50px;
+  opacity: 0;
+  background-color: #cecece;
+  transition: 0.3s;
+  color: black;
+}
+.btn:hover {
+  color: #e0e0e0;
+}
+.results_contents {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 377px;
+}
+
+.result {
+  margin-top: 40px;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.result.is-visible {
+  opacity: 1;
+}
+.result.is-visible .btn {
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  header div {
+    display: none;
+  }
+  article {
+    width: 95%;
+  }
+  .question-name {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .choice-grid div {
+    width: 49%;
+  }
+}
